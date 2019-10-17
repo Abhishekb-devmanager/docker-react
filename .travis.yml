@@ -3,6 +3,6 @@ services:
   - docker
 
 before_install:
-  - docker build -t Abhishekb-devmanager/docker-react -f Dockerfile.dev .
+  - docker build -t abhishekb-devmanager/docker-react -f Dockerfile.dev .
 script:
-  - docker run  -t Abhishekb-devmanager/docker-react npm run test -- --coverage
+  - docker run  -t abhishekb-devmanager/docker-react npm run test -- --coverage
